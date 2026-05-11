@@ -1,5 +1,5 @@
 """
-Clinical Assessor MCP Server
+Shared MCP Server between specialist agents
 Provides real-time grounding via OpenFDA and PubMed E-utilities.
 """
 import os

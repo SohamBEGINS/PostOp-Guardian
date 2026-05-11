@@ -5,7 +5,6 @@ Provides two tools:
 2. log_daily_progress   — called at the END of each session to persist today's record.
 
 Persists data to a local JSON file: patient_progress_log.json
-Runs on port 8006 (Clinical Assessor = 8005, Recovery Coach = 8004).
 """
 import os
 import json
