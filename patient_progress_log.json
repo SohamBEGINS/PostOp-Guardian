@@ -14,19 +14,26 @@
         "action_taken": "Recommended immediate evaluation for DVT via Doppler ultrasound. Advising patient to limit Ibuprofen use and consult physician for alternative pain management."
       },
       {
-        "date": "2026-05-10",
-        "post_op_day": 12,
-        "patient_status": "GREEN",
+        "date": "2026-05-11",
+        "post_op_day": 4,
+        "patient_status": "RED",
         "reported_symptoms": [
-          "decreased swelling in right leg",
-          "resolved sharp throbbing pain",
-          "mild dull ache",
-          "no redness or warmth",
-          "increased comfort in walking",
-          "ultrasound results clear"
+          "worsening sharp throbbing pain in calf",
+          "warmth and redness in lower leg"
         ],
         "agent_consulted": "TKA Agent",
-        "action_taken": "Patient's recovery is progressing well with significant improvements in swelling, pain, and mobility."
+        "action_taken": "Recommended immediate evaluation by a healthcare provider due to concerning symptoms."
+      },
+      {
+        "date": "2026-05-11",
+        "post_op_day": 5,
+        "patient_status": "RED",
+        "reported_symptoms": [
+          "neon rashes",
+          "double vision"
+        ],
+        "agent_consulted": "TKA Agent",
+        "action_taken": "Recommended immediate human physician escalation for further assessment of neurological involvement."
       }
     ]
   }

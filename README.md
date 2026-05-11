@@ -62,7 +62,10 @@ uv run shared_mcp_server.py
 
 PostOp Guardian is built on clinical standards to ensure safety and accuracy:
 
-- **NEWS2 Triage:** Risk outputs use the **National Early Warning Score 2 (NEWS2)** protocol (RED/AMBER/GREEN).
+- **NEWS2 Triage:** Risk outputs use the **National Early Warning Score 2 (NEWS2)** protocol to triage patients into three actionable categories:
+    - **GREEN:** Normal recovery. Symptoms are expected and manageable at home (e.g., mild swelling).
+    - **AMBER:** Concerning symptoms matching known complications. Requires prompt clinical advice (e.g., calf pain indicating potential DVT).
+    - **RED:** Immediate emergency. Triggered by severe symptoms (e.g., chest pain) **OR** by unknown, out-of-scope symptoms (if the AI finds zero medical evidence linking a symptom to the surgery, it defaults to a systemic emergency and refuses to guess).
 - **Evidence Triangulation:** Specialists only reach a diagnosis after triangulating data from three sources:
     1. **PubMed:** Real-time medical literature search.
     2. **OpenFDA:** Pharmacovigilance data for drug-drug interactions.
