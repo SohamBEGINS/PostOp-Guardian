@@ -1,0 +1,40 @@
+METROPOLITAN SURGICAL CENTER: DISCHARGE SUMMARY
+--------------------------------------------------
+PATIENT: Tyrone Ram
+DOB: 05/15/1960
+MRN: 9482-110
+ADMISSION DATE: 2026-04-10
+DISCHARGE DATE: 2026-04-13
+
+PROCEDURE PERFORMED: 
+Right Total Knee Arthroplasty (TKA)
+
+SURGEON: 
+Dr. Sarah Jenkins, Orthopedic Surgery
+
+PAST MEDICAL HISTORY:
+- Hypertension (Controlled)
+- Type 2 Diabetes Mellitus (Diet-controlled)
+- Osteoarthritis (Bilateral)
+
+HOSPITAL COURSE:
+The patient underwent an uncomplicated right total knee arthroplasty on 2026-04-10. Post-operative recovery was standard. Patient participated in physical therapy on Post-Op Day 1 and was able to bear weight as tolerated with the assistance of a front-wheeled walker. Incision site is clean, dry, and intact with no signs of erythema or exudate. 
+
+DISCHARGE MEDICATIONS:
+1. Warfarin 5mg PO daily: DVT prophylaxis—strict compliance required to prevent blood clots.
+2. Acetaminophen 500mg PO: Every 6 hours PRN for mild to moderate pain.
+
+RECOVERY PROTOCOL:
+- Activity: Weight-bearing as tolerated. Use walker for the first 14 days to ensure stability and prevent falls.
+- Wound Care: Keep the incision clean and dry. You may shower after 48 hours, but do not submerge the knee in a bath or pool.
+- Physical Therapy: Perform home exercises 3 times daily as instructed by the PT team.
+
+WARNING SIGNS TO REPORT:
+Call the clinic immediately if you experience:
+- Fever over 101.5°F.
+- Sudden increased redness or warmth around the incision.
+- Pus-like drainage or foul odor from the wound.
+
+FOLLOW-UP:
+Follow up in the orthopedic clinic in 4 weeks (May 2026) for suture removal and post-operative imaging.
+--------------------------------------------------

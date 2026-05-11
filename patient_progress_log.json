@@ -1,0 +1,33 @@
+{
+  "patients": {
+    "tyrone_ram": [
+      {
+        "date": "2026-05-10",
+        "post_op_day": 3,
+        "patient_status": "AMBER",
+        "reported_symptoms": [
+          "significant swelling in lower leg",
+          "sharp, throbbing pain in right calf (8/10)",
+          "tightness in lower leg affecting range of motion"
+        ],
+        "agent_consulted": "TKA Agent",
+        "action_taken": "Recommended immediate evaluation for DVT via Doppler ultrasound. Advising patient to limit Ibuprofen use and consult physician for alternative pain management."
+      },
+      {
+        "date": "2026-05-10",
+        "post_op_day": 12,
+        "patient_status": "GREEN",
+        "reported_symptoms": [
+          "decreased swelling in right leg",
+          "resolved sharp throbbing pain",
+          "mild dull ache",
+          "no redness or warmth",
+          "increased comfort in walking",
+          "ultrasound results clear"
+        ],
+        "agent_consulted": "TKA Agent",
+        "action_taken": "Patient's recovery is progressing well with significant improvements in swelling, pain, and mobility."
+      }
+    ]
+  }
+}

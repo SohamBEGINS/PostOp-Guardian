@@ -1,0 +1,14 @@
+[project]
+name = "multimodal-trial-ensemble"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "anyio>=4.13.0",
+    "chromadb>=1.5.8",
+    "fastmcp>=3.2.0",
+    "httpx>=0.28.1",
+    "ipykernel>=7.2.0",
+    "mcp>=1.27.0",
+    "uvicorn>=0.44.0",
+    "vitaldb>=1.6.0",
+]

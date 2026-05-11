@@ -1,0 +1,28 @@
+# Ignore everything by default
+*
+
+# Allow the main showcase files
+!README.md
+!PROJECT_MEMORY.md
+!architecture.png
+!pyproject.toml
+!uv.lock
+!.gitignore
+
+# Allow the MCP servers and their data
+!shared_mcp_server.py
+!orchestrator_mcp_server.py
+!patient_progress_log.json
+
+# Allow Clinical Knowledge Base
+!dr_smith_case_history.md
+
+# Allow Tyrone-related files only (as requested)
+!tyrone_clinical_notes.txt
+!tyrone_fhir_bundle.json
+
+# Ignore directories
+.venv/
+po-adk-python/
+__pycache__/
+.pytest_cache/

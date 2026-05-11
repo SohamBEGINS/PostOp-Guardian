@@ -1,0 +1,146 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:11111111-2222-3333-4444-555555555555",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "11111111-2222-3333-4444-555555555555",
+        "name": [
+          {
+            "use": "official",
+            "family": "Ram",
+            "given": [
+              "Tyrone"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1960-05-15"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66666666-7777-8888-9999-000000000000",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "66666666-7777-8888-9999-000000000000",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "11289",
+              "display": "Warfarin"
+            }
+          ],
+          "text": "Warfarin"
+        },
+        "subject": {
+          "reference": "urn:uuid:11111111-2222-3333-4444-555555555555"
+        },
+        "dosageInstruction": [
+          {
+            "text": "5mg daily (DVT prophylaxis)"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:77777777-8888-9999-0000-111111111111",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "77777777-8888-9999-0000-111111111111",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "161",
+              "display": "Acetaminophen"
+            }
+          ],
+          "text": "Acetaminophen"
+        },
+        "subject": {
+          "reference": "urn:uuid:11111111-2222-3333-4444-555555555555"
+        },
+        "dosageInstruction": [
+          {
+            "text": "500mg every 6 hours as needed for pain"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88888888-9999-0000-1111-222222222222",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "88888888-9999-0000-1111-222222222222",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "399211009",
+              "display": "History of total knee replacement"
+            }
+          ],
+          "text": "History of total knee replacement"
+        },
+        "subject": {
+          "reference": "urn:uuid:11111111-2222-3333-4444-555555555555"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ddeeff00-1122-3344-5566-778899aabbcc",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "ddeeff00-1122-3344-5566-778899aabbcc",
+        "status": "current",
+        "subject": {
+          "reference": "urn:uuid:11111111-2222-3333-4444-555555555555"
+        },
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "title": "tyrone_clinical_notes.txt",
+              "data": "TUVUUk9QT0xJVEFOIFNVUkdJQ0FMIENFTlRFUjogRElTQ0hBUkdFIFNVTU1BUlkKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KUEFUSUVOVDogVHlyb25lIFJhbQpET0I6IDA1LzE1LzE5NjAKTVJOOiA5NDgyLTExMApBRE1JU1NJT04gREFURTogMjAyNi0wNC0xMApESVNDSEFSR0UgREFURTogMjAyNi0wNC0xMwoKUFJPQ0VEVVJFIFBFUkZPUk1FRDogClJpZ2h0IFRvdGFsIEtuZWUgQXJ0aHJvcGxhc3R5IChUS0EpCgpTVVJHRU9OOiAKRHIuIFNhcmFoIEplbmtpbnMsIE9ydGhvcGVkaWMgU3VyZ2VyeQoKUEFTVCBNRURJQ0FMIEhJU1RPUlk6Ci0gSHlwZXJ0ZW5zaW9uIChDb250cm9sbGVkKQotIFR5cGUgMiBEaWFiZXRlcyBNZWxsaXR1cyAoRGlldC1jb250cm9sbGVkKQotIE9zdGVvYXJ0aHJpdGlzIChCaWxhdGVyYWwpCgpIT1NQSVRBTCBDT1VSU0U6ClRoZSBwYXRpZW50IHVuZGVyd2VudCBhbiB1bmNvbXBsaWNhdGVkIHJpZ2h0IHRvdGFsIGtuZWUgYXJ0aHJvcGxhc3R5IG9uIDIwMjYtMDQtMTAuIFBvc3Qtb3BlcmF0aXZlIHJlY292ZXJ5IHdhcyBzdGFuZGFyZC4gUGF0aWVudCBwYXJ0aWNpcGF0ZWQgaW4gcGh5c2ljYWwgdGhlcmFweSBvbiBQb3N0LU9wIERheSAxIGFuZCB3YXMgYWJsZSB0byBiZWFyIHdlaWdodCBhcyB0b2xlcmF0ZWQgd2l0aCB0aGUgYXNzaXN0YW5jZSBvZiBhIGZyb250LXdoZWVsZWQgd2Fsa2VyLiBJbmNpc2lvbiBzaXRlIGlzIGNsZWFuLCBkcnksIGFuZCBpbnRhY3Qgd2l0aCBubyBzaWducyBvZiBlcnl0aGVtYSBvciBleHVkYXRlLiAKCkRJU0NIQVJHRSBNRURJQ0FUSU9OUzoKMS4gV2FyZmFyaW4gNW1nIFBPIGRhaWx5OiBEVlQgcHJvcGh5bGF4aXPigJRzdHJpY3QgY29tcGxpYW5jZSByZXF1aXJlZCB0byBwcmV2ZW50IGJsb29kIGNsb3RzLgoyLiBBY2V0YW1pbm9waGVuIDUwMG1nIFBPOiBFdmVyeSA2IGhvdXJzIFBSTiBmb3IgbWlsZCB0byBtb2RlcmF0ZSBwYWluLgoKUkVDT1ZFUlkgUFJPVE9DT0w6Ci0gQWN0aXZpdHk6IFdlaWdodC1iZWFyaW5nIGFzIHRvbGVyYXRlZC4gVXNlIHdhbGtlciBmb3IgdGhlIGZpcnN0IDE0IGRheXMgdG8gZW5zdXJlIHN0YWJpbGl0eSBhbmQgcHJldmVudCBmYWxscy4KLSBXb3VuZCBDYXJlOiBLZWVwIHRoZSBpbmNpc2lvbiBjbGVhbiBhbmQgZHJ5LiBZb3UgbWF5IHNob3dlciBhZnRlciA0OCBob3VycywgYnV0IGRvIG5vdCBzdWJtZXJnZSB0aGUga25lZSBpbiBhIGJhdGggb3IgcG9vbC4KLSBQaHlzaWNhbCBUaGVyYXB5OiBQZXJmb3JtIGhvbWUgZXhlcmNpc2VzIDMgdGltZXMgZGFpbHkgYXMgaW5zdHJ1Y3RlZCBieSB0aGUgUFQgdGVhbS4KCldBUk5JTkcgU0lHTlMgVE8gUkVQT1JUOgpDYWxsIHRoZSBjbGluaWMgaW1tZWRpYXRlbHkgaWYgeW91IGV4cGVyaWVuY2U6Ci0gRmV2ZXIgb3ZlciAxMDEuNcKwRi4KLSBTdWRkZW4gaW5jcmVhc2VkIHJlZG5lc3Mgb3Igd2FybXRoIGFyb3VuZCB0aGUgaW5jaXNpb24uCi0gUHVzLWxpa2UgZHJhaW5hZ2Ugb3IgZm91bCBvZG9yIGZyb20gdGhlIHdvdW5kLgoKRk9MTE9XLVVQOgpGb2xsb3cgdXAgaW4gdGhlIG9ydGhvcGVkaWMgY2xpbmljIGluIDQgd2Vla3MgKE1heSAyMDI2KSBmb3Igc3V0dXJlIHJlbW92YWwgYW5kIHBvc3Qtb3BlcmF0aXZlIGltYWdpbmcuCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DocumentReference"
+      }
+    }
+  ]
+}
